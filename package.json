@@ -1,0 +1,39 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/Despina-Org/backend.git",
+  "license": "MIT",
+  "author": {
+    "name": "drethenrain",
+    "url": "https://drethenrain.me/",
+    "email": "drethenrain@hotmail.com"
+  },
+  "scripts": {
+    "dev": "tsnd --respawn --no-notify --transpile-only src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint ./ --ext \"js,ts\"",
+    "lint:fix": "eslint ./ --ext \"js,ts\" --fix",
+    "typeorm": "tsnd ./node_modules/typeorm/cli.js",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "pg": "^8.7.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.41",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.10",
+    "@types/uuid": "^8.3.4",
+    "eslint": "^7.3.0",
+    "eslint-config-schoolseat": "^1.1.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.4.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
+  }
+}
